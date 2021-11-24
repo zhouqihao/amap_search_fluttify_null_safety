@@ -1,6 +1,10 @@
-<!--空安全版本-->
+# 基于原本的0.17.0-dev.0版本修改
+## 1 改为空安全
+## 2 改变了android目录下的build.gradle 
 
-# 注意android下依赖高德的库改成了coplieOnly 需要在项目的app/build.gradle 手动依赖一下
+     api 'com.amap.api:search:7.7.0' 改为 compileOnly 'com.amap.api:search:7.7.0'
+     所以需要在程序的android目录下的app的build.gradle 配置依赖高德地图的搜索库
+    
 
 # 高德地图 `搜索`组件
 
